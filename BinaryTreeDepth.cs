@@ -25,9 +25,7 @@ namespace BinaryTreeDepth
 			else
 			{				
 				int lDepth = maxDepth(node.left);
-				int rDepth = maxDepth(node.right);
-
-				/* use the larger one */
+				int rDepth = maxDepth(node.right);				
 				if (lDepth > rDepth)
 					return (lDepth + 1);
 				else
@@ -42,17 +40,15 @@ namespace BinaryTreeDepth
 		{
 			BinaryTree tree = new BinaryTree();
 
-            tree.root = new Node(9);
-            tree.root.left = new Node(5);
-            tree.root.right = new Node(12);
-            tree.root.left.left = new Node(1);
-            tree.root.left.right = new Node(7);
-			tree.root.right.left = new Node(10);
-			tree.root.left.left.right = new Node(4);			
-			
+		       tree.root = new Node(9);
+		       tree.root.left = new Node(5);
+		       tree.root.right = new Node(12);
+		       tree.root.left.left = new Node(1);
+		       tree.root.left.right = new Node(7);
+		       tree.root.right.left = new Node(10);
+	               tree.root.left.left.right = new Node(4);	
 
-			Console.WriteLine("Thellsia e pemes eshte : " +
-										tree.maxDepth(tree.root));
+			Console.WriteLine("Thellsia e pemes eshte : " +	tree.maxDepth(tree.root));
 
 		}
 	}
