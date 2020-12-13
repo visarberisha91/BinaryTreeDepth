@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace thellsia
+namespace BinaryTreeDepth
 {
     
 	public class Node
